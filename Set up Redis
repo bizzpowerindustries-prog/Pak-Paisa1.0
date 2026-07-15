@@ -1,7 +1,0 @@
-# Create ElastiCache cluster
-aws elasticache create-cache-cluster \
-    --cache-cluster-id pakpaisa-cache \
-    --cache-node-type cache.t3.micro \
-    --engine redis \
-    --num-cache-nodes 1 \
-    --security-group-ids sg-xxx
