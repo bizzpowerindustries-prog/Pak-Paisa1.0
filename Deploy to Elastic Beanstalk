@@ -1,0 +1,18 @@
+# Create environment
+eb create pakpaisa-prod --platform php-8.2 \
+    --instance-type t3.medium \
+    --vpc.id vpc-xxx \
+    --vpc.ec2subnets subnet-xxx,subnet-yyy \
+    --region us-east-1
+
+# Deploy
+eb deploy
+
+# Set environment variables
+eb setenv APP_ENV=production APP_DEBUG=false \
+    DB_HOST=xxx.rds.amazonaws.com \
+    DB_DATABASE=pakpaisa \
+    DB_USERNAME=pakpaisa \
+    DB_PASSWORD=securepassword \
+    REDIS_HOST=xxx.redis.cache.amazonaws.com \
+    AWS_BUCKET=pakpaisa-files
