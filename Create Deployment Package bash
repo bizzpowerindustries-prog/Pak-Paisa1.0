@@ -1,5 +1,0 @@
-# Create deployment zip
-zip -r pakpaisa-deploy.zip . -x "*.git*" "node_modules/*" "storage/*" "tests/*" "*.env"
-
-# Upload to S3
-aws s3 cp pakpaisa-deploy.zip s3://pakpaisa-deployments/
