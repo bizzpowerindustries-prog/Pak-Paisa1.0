@@ -1,0 +1,45 @@
+pakpaisa/
+├── app/
+│   ├── Console/
+│   │   └── Commands/
+│   ├── Exceptions/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Api/
+│   │   │   │   ├── AuthController.php
+│   │   │   │   ├── WalletController.php
+│   │   │   │   └── TransferController.php
+│   │   │   ├── Admin/
+│   │   │   │   ├── AdminController.php
+│   │   │   │   └── SettlementController.php
+│   │   │   └── Web/
+│   │   │       ├── Auth/
+│   │   │       └── DashboardController.php
+│   │   ├── Middleware/
+│   │   └── Requests/
+│   ├── Models/
+│   │   ├── User.php
+│   │   ├── Wallet.php
+│   │   ├── Transaction.php
+│   │   ├── KycDocument.php
+│   │   ├── AuditLog.php
+│   │   ├── BankAccount.php
+│   │   └── Device.php
+│   ├── Services/
+│   │   ├── WalletService.php
+│   │   ├── TransferService.php
+│   │   ├── KycService.php
+│   │   ├── OneLinkService.php
+│   │   └── AuditService.php
+│   └── Traits/
+│       └── Encryptable.php
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── resources/
+│   └── views/
+├── routes/
+├── config/
+├── .ebextensions/
+├── .env.example
+└── Procfile
